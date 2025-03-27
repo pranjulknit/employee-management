@@ -7,8 +7,11 @@ const AdminDashboard = () => {
   return (
     <div className="min-h-screen w-full bg-gray-100">
       <Header />
+      <div className="flex  justify-around max-h-4xl ">
       <CreateTask/>
       <Alltask/>
+      </div>
+      
     </div>
   );
 };
