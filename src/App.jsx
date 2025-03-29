@@ -34,7 +34,7 @@ const App = () => {
    
     <div>
      { !user ? <Login handleLogin={handleLogin}/> :''}  
-     {user == 'admin' ? <AdminDashboard/>: ( <EmployeeDashboard/> }
+     {user == 'admin' ? <AdminDashboard/>: (user =='employee'? <EmployeeDashboard/> : '')}
      
     </div>
   );
